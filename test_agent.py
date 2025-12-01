@@ -112,7 +112,7 @@ def test_spaced_repetition():
     days_med = (next_review - datetime.now()).days
     print(f"  Medium performance (70%): review in {days_med} days")
     
-    # Test low performance
+    # Test low performance of student
     next_review = scheduler.calculate_next_review(
         last_review=datetime.now(),
         repetition_number=0,
